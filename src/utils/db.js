@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const mongoURI = "mongodb+srv://nextJsPizza:0APDzbjBcX6nGLlb@cluster0.nrtve9t.mongodb.net/nextJsPizza?retryWrites=true&w=majority&appName=Cluster0";
+const mongoURI = process.env.DB_URL;
 const connection = {};
 
 async function connect() {
@@ -17,8 +17,8 @@ async function connect() {
     await mongoose.disconnect();
   }
   const db = await mongoose.connect(mongoURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
     connectTimeoutMS: 30000, // 30 seconds
     socketTimeoutMS: 30000, // 30 seconds
   });

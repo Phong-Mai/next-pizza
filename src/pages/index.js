@@ -109,7 +109,7 @@ export default function Home({ data }) {
 export async function getStaticProps() {
   let data;
   try {
-    const pizzaData = await fetch("https://next-pizza-nu.vercel.app/api/foodData", { method: "GET" })
+    const pizzaData = await fetch(baseUrl + "api/foodData", { method: "GET" })
       .then((response) => response.json())
       .catch((error) => error.message);
 
