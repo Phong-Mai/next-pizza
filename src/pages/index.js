@@ -112,7 +112,7 @@ export async function getStaticProps() {
     const pizzaData = await fetch(baseUrl + "api/foodData", { method: "GET" })
       .then((response) => response.json())
       .catch((error) => error.message);
-
+    
     data = await JSON.parse(JSON.stringify(pizzaData)); // step required during deployment in staticProps
   } catch (error) {
     console.log(error.message);
