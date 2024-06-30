@@ -21,7 +21,7 @@ export default async function handler(req, res) {
   if (req.method === "GET") {
     await db.connect();
     let data = await PizzaData.find();
-  await res.status(200).json({ data });
+    res.status(200).json({ data });
   }
   db.disconnect();
 }

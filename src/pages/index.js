@@ -17,7 +17,7 @@ export default function Home({ data }) {
       return foodData.push(data), categories.add(data.category);
     });
   };
-
+  console.log(process.env.DB_URL);
   handleData();
   // useEffect(() => {
   //   localStorage.setItem("isAdmin", false); //added this line here to prevent anyone from accessing /admin if not logged in.
@@ -112,7 +112,7 @@ export async function getStaticProps() {
     const pizzaData = await fetch(baseUrl + "api/foodData", { method: "GET" })
       .then((response) => response.json())
       .catch((error) => error.message);
-    
+
     data = await JSON.parse(JSON.stringify(pizzaData)); // step required during deployment in staticProps
   } catch (error) {
     console.log(error.message);
