@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const mongoURI = process.env.DB_URL;
+const mongoURI = 'mongodb+srv://nextJsPizza:0APDzbjBcX6nGLlb@cluster0.nrtve9t.mongodb.net/nextJsPizza?retryWrites=true&w=majority&appName=Cluster0';
 const connection = {};
 
 async function connect() {
