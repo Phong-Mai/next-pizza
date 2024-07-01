@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const imageProp = ["https://bears.vn/wp-content/uploads/2019/08/4-2.jpg", "https://png.pngtree.com/png-clipart/20230326/ourlarge/pngtree-isolated-burger-on-transparent-background-png-image_6669724.png", "https://cdn.tgdd.vn/Files/2020/07/22/1272788/bo-tui-cach-lam-sua-lac-milkshake-thom-ngon-beo-ngay-nhu-trong-phim-my-202201131232467084.jpg"];
+const imageProp = ["https://bears.vn/wp-content/uploads/2019/08/4-2.jpg", "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?cs=srgb&dl=pexels-valeriya-1639557.jpg&fm=jpg", "https://watermark.lovepik.com/photo/20211125/large/lovepik-cocktail-picture_500985831.jpg"];
 
 function CarouselComponent() {
   return (
